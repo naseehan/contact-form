@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="container">
+            <form action="" id="contactForm">
+                <div class="alert">Your message sent</div>
+                <div class="commen">
+                <input type="text" name="" id="name" placeholder="Full Name">
+                <input type="email" name="emailId" id="emailId" placeholder="Email Address">
+                <input type="number" name="phNumber" id="phNumber" placeholder="Phone Number">
+                <input type="text" name="address" id="address" placeholder="Address">
+            </div>
+
+            <div class="status commen">
+                <select name="status" id="employmentStatus">
+                    <option value="Current employment status">Current employment status</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Unemployment">Unemployment </option>
+                    <option value="Student">Student</option>
+                </select>
+            </div>
+
+            <div class="experiences commen">
+                <label for="jobTitles">Work Experience</label>
+                <input type="text" name="jobTitles" id="jobTitles" placeholder="Previous Job Titles">
+                <input type="text" name="companies" id="companies" placeholder="Companies worked for">
+                <input type="text" name="length" id="length" placeholder="Length of employment">
+            </div>
+
+            <div class="education commen">
+                <label for="degree">Education</label>
+                <input type="text" name="degree" id="degree" placeholder="Highest degree earned">
+                <input type="text" name="school" id="school" placeholder="School attended">
+                <input type="text" name="fieldOfStudy" id="fieldOfStudy" placeholder="Field of study">
+            </div>
+
+            <div class="qualifications commen">
+                <label for="certifications">Skills and qualifications</label>
+                <input type="text" name="certifications" id="certifications" placeholder="Relevant certifications">
+                <input type="text" name="language" id="language" placeholder="Language proficiency">
+                <input type="text" name="software" id="software" placeholder="Software proficiency">
+            </div>
+
+            <div class="availability commen">
+                <label for="certifications">Availability </label>
+                <input type="date" name="date" id="date" placeholder="Start date">
+                <input type="time" name="hours" id="hours" placeholder="Preferred working hours">
+            </div>
+            <div class="employeeFiles commen">
+                <input type="number" name="salary" id="salary" placeholder="Salary expectations">
+                <input type="file" id="resume" placeholder="resume/CV">
+            </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+</html>
