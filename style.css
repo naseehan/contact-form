@@ -3,6 +3,9 @@
     justify-content: center;
     font-family: sans-serif;
 }
+.container{
+    padding: 0 5%;
+}
 .commen{
     display: flex;
     justify-content: center;
