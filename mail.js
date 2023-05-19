@@ -52,6 +52,13 @@ function submitForm(e) {
   //   reset the form
   document.getElementById("contactForm").reset();
     // console.log(name, emailId, phNumber,address, employmentStatus, jobTitles, companies, length, degree, school, fieldOfStudy, certifications, date, hours, salary, resume, language, software);
+
+ // Scroll to the top
+ window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  
 }
     // save form to firebase
     const saveMessages = (name, emailId, phNumber, address, employmentStatus, jobTitles, companies, length, degree, school, fieldOfStudy, certifications, date, hours, salary, resume, language, software) => {
